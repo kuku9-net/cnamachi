@@ -1,0 +1,160 @@
+@import "./basic.scss";
+@import '../../node_modules/tippy.js/dist/tippy';
+@import '../../node_modules/tippy.js/themes/light-border';
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+    text-align: justify;
+    letter-spacing: 0.023em;
+    font-feature-settings: "pwid" 1;
+    margin: auto;
+    font-size: large;
+    padding: 0 1em 4em;
+    line-height: 1.25em;
+    color: #333;
+    line-height: 1.8em;
+
+
+    blockquote {
+        margin: 0.5em 0;
+        padding: 0 1.5em;
+        border-left: 4px solid #d6dde3;
+        font-style: italic;
+
+        cite {
+            display: block;
+            text-align: right;
+            font-size: 0.85em;
+        }
+    }
+
+    h2, h3 {
+        margin: 4em auto 2em;
+        width: calc(min(80%, 800px));
+        line-height: 1em;
+        height: 1.2em;
+    }
+
+    & > p, ul, ol, .box, blockquote, .definition {
+        font-family: serif;
+        margin: 1em auto;
+        @media (min-width: 790px){
+            width: calc(min(85%, 800px));
+        }
+    }
+    & > p {
+        text-indent: 1em each-line;
+    }
+    .box {
+        border: 2px solid #333;
+        padding: 1em;
+        line-height: 1.5em;
+    }
+
+    ul, ol {
+        padding: 0 1.5em;
+        li {
+            font-size: 0.95em;
+            margin: 0.5em 0;
+        }
+    }
+    ul {
+        li {
+            list-style-type: circle;
+        }
+    }
+
+    code {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+    .center {
+        @include flex-center;
+        flex-direction: column;
+        width: 85vw;
+        margin: 1.5em auto;
+        img {
+            width: 100%;
+            max-width: 960px;
+            object-fit: contain;
+
+        }
+
+        &.smaller {
+            img {
+                max-width: 550px;
+            }
+        }
+
+        &.title {
+            margin: 7em auto;
+        }
+    }
+}
+
+.icon {
+    position: fixed;
+    right:1em;
+    top: 1em;
+    width: 4em;
+    svg {
+        transform: rotate(-90deg);
+    }
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+
+    &:before,
+    &:after {
+        background-color: #333;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    &:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    &:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}
+
+.definition {
+    border: 1px solid #888;
+    padding: 0.5em 1em;
+
+    dl {
+        margin: 1em 2em;
+
+        dt {
+            margin: 1em 0 0.25em;
+            font-weight: 800;
+        }
+        dd {
+            font-family: serif;
+        }
+    }
+}
+
+strong {
+    color: red;
+    font-weight: 600;
+}
+em {
+    background: #FFE3FF;
+    padding: 0.1em 0.2em;
+}
