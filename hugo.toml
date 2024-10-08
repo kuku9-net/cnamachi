@@ -18,7 +18,12 @@ defaultContentLanguageInSubdir = false
         cardFilename = "card_image.png"
 
    [languages.en]
-     languageCode = "en"
+      languageCode = "en"
+      title = "Will A.I. set you free"
+      [languages.en.params]
+        subtitle = "CASUAL ver."
+        description = "The reason why A.I. will not set you free"
+        cardFilename = "card_image.en.png"
      [languages.en.markup.goldmark.extensions.cjk]
          enable = false
      [languages.en.markup.goldmark.renderer]

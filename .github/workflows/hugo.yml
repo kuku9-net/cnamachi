@@ -50,6 +50,7 @@ jobs:
           cd page
           mkdir -p cnamachi/en
           cp ../public/index.html cnamachi/
+          cp ../public/en/index.html cnamachi/en
           git add .
           git commit -m "update cnamachi" || true
           git push origin main
