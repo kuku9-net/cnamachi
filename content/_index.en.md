@@ -94,9 +94,12 @@ The more convenient and widely rooted technology becomes in life, the more its g
 and the more obvious the structure of the **center** and **periphery** becomes.
 
 The more technology caters to *everyone's* desires, the more it prevents you from being free.
+Technology is a tool, and how it brings benefits and losses is a matter of the ability of those who use it.
+Today, mankind is not mastering technology, but rather being dominated by it.
+We need to recognize this reality and break free from it.
+Since we cannot even master current technology, it is clear that even more powerful technology, A.I., will amplify the threat.  
 For you to be free to use A.I., the individual must control the technology.
 On a societal level, that means you need autonomy.
-You need to recognize the reality that technology is being used as a tool of control and break free from it.
 
 Technology is seen as a good thing because it serves *everyone*'s desires, and this causes all sorts of problems.
 In other words, these problems are caused by *everyone*'s *common sense and fair* routine.
